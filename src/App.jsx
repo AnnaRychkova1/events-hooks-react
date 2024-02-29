@@ -20,7 +20,7 @@ function App() {
     const parsedFeedback = JSON.parse(stringifiedFeedback);
     console.log(parsedFeedback);
 
-    return {};
+    return parsedFeedback;
   });
 
   useEffect(() => {
