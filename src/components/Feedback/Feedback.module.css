@@ -1,3 +1,8 @@
+.feedbackContainer {
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
 .feedbackItem {
   margin-bottom: 10px;
   text-transform: capitalize;

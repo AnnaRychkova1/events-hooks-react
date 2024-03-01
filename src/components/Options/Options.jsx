@@ -1,10 +1,9 @@
 import css from './Options.module.css';
 
 const Options = ({ state, onClickButton, resetCounters, totalFeedback }) => {
-  // const Options = ({ state, onClickButton, updateFeedback }) => {
   return (
-    <>
-      {state.map((item, index) => (
+    <ul className={css.optionsContainer}>
+      {Object.keys(state).map((item, index) => (
         <li key={index}>
           <button
             className={css.optionsButton}
@@ -21,7 +20,7 @@ const Options = ({ state, onClickButton, resetCounters, totalFeedback }) => {
           </button>
         </li>
       )}
-    </>
+    </ul>
   );
 };
 

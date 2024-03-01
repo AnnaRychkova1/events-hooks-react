@@ -1,0 +1,15 @@
+.descrTitle {
+  margin-top: 30px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.descrText {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+}
