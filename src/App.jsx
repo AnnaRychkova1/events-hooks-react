@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
-import './App.css';
 import Feedback from './components/Feedback/Feedback';
 import Options from './components/Options/Options';
 import Notification from './components/Notification/Notification';
+import css from './App.module.css';
 
 function App() {
   let state = {
@@ -18,7 +18,6 @@ function App() {
     if (!stringifiedFeedback) return state;
 
     const parsedFeedback = JSON.parse(stringifiedFeedback);
-    console.log(parsedFeedback);
 
     return parsedFeedback;
   });
@@ -45,7 +44,6 @@ function App() {
   }
 
   const totalFeedback = counters.good + counters.neutral + counters.bad;
-  console.log(totalFeedback);
 
   const resetCounters = () => {
     setCounters(state);
@@ -59,12 +57,12 @@ function App() {
 
   return (
     <>
-      <h1>Sip Happens Café</h1>
-      <p>
+      <h1 className={css.title}>Sip Happens Café</h1>
+      <p className={css.leaveFeedback}>
         Please leave your feedback about our service by selecting one of the
         options below.
       </p>
-      <ul>
+      <ul className={css.optionsContainer}>
         <Options
           state={keys}
           onClickButton={updateFeedback}
@@ -74,7 +72,7 @@ function App() {
       </ul>
 
       {totalFeedback > 0 && (
-        <ul>
+        <ul className={css.feedbackContainer}>
           <Feedback
             state={keys}
             counters={counters}

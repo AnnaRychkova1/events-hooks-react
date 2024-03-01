@@ -1,0 +1,14 @@
+.feedbackItem {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.feedbackLabel {
+  font-weight: bold;
+}
+
+.feedbackValue {
+  margin-left: 10px;
+  font-weight: normal;
+}

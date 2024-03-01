@@ -1,20 +1,26 @@
-// import css from './Feedback.module.css'
+import css from './Feedback.module.css';
 
 const Feedback = ({ state, counters, totalFeedback, positiveFeedback }) => {
   return (
     <>
       {state.map((item, index) => (
-        <li key={index}>
-          <p>
-            {item}: {counters[item] || 0}
+        <li className={css.feedbackItem} key={index}>
+          <p className={css.feedbackLabel}>
+            {item}:
+            <span className={css.feedbackValue}>{counters[item] || 0}</span>
           </p>
         </li>
       ))}
-      <li>
-        <p>Total: {totalFeedback}</p>
+      <li className={css.feedbackItem}>
+        <p className={css.feedbackLabel}>
+          Total:<span className={css.feedbackValue}>{totalFeedback}</span>
+        </p>
       </li>
-      <li>
-        <p>Positive: {positiveFeedback()}% </p>
+      <li className={css.feedbackItem}>
+        <p className={css.feedbackLabel}>
+          Positive:{' '}
+          <span className={css.feedbackValue}>{positiveFeedback()}% </span>
+        </p>
       </li>
     </>
   );

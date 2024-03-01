@@ -1,0 +1,27 @@
+.title {
+  margin-top: 30px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.leaveFeedback {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+}
+
+.optionsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.feedbackContainer {
+  margin-bottom: 30px;
+  margin-left: 50px;
+}

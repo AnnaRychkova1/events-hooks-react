@@ -1,0 +1,29 @@
+.optionsButton {
+  min-width: 42px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.optionsButtonReset {
+  min-width: 42px;
+  background-color: #605f5f3b;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.optionsButtonReset:hover {
+  color: #f0f0f0;
+  background-color: #595858;
+}
+
+.optionsButton:hover {
+  background-color: #e0e0e0;
+}
